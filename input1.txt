@@ -1,0 +1,29 @@
+# eight tasks with different durations
+task, t1 2
+task, t2 3
+task, t3 4
+task, t4 1
+task, t5 6
+task, t6 2
+task, t7 3
+task, t8 3
+
+# six hard domain constraints
+domain, t1 tue
+domain, t2 starts-after mon 11am
+domain, t3 ends-in wed 4pm-fri 11am
+domain, t4 starts-after wed 11am
+domain, t7 ends-before thu 3pm
+domain, t8 starts-in thu 12pm-fri 9am
+
+# three soft domain constraints
+domain, t5 ends-by thu 4pm 20
+domain, t6 ends-by wed 2pm 5
+domain, t8 ends-by thu 5pm 2
+
+# five constraints
+constraint, t1 after t2
+constraint, t3 starts-at t4
+constraint, t5 after t4
+constraint, t5 same-day t6
+constraint, t7 after t6

@@ -1,0 +1,6 @@
+# only one task
+task, t1 1
+
+# a task that have no solution
+domain, t1 starts-after 12pm
+domain, t1 ends-before 12pm

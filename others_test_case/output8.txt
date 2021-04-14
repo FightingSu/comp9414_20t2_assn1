@@ -1,0 +1,5 @@
+t1:tue 9am
+t2:tue 11am
+t3:tue 1pm
+t4:tue 3pm
+cost:520

@@ -1,0 +1,21 @@
+task, t1 3
+task, t2 2
+task, t3 4
+task, t4 1
+task, t5 3
+task, t6 2
+task, t7 6
+
+constraint, t1 same-day t2
+constraint, t3 after t2
+constraint, t4 before t3
+constraint, t6 starts-at t5
+constraint, t7 after t2
+
+domain, t1 starts-in tue 11am-thu 4pm
+domain, t2 wed
+domain, t3 10am
+domain, t4 tue
+domain, t5 ends-by mon 12pm 10
+domain, t6 ends-by wed 3pm 5
+domain, t7 ends-by wed 10am 3

@@ -1,0 +1,21 @@
+# eight tasks
+task, t1 1 
+task, t2 1  
+task, t3 1
+task, t4 1  
+task, t5 1
+task, t6 1
+task, t7 1
+task, t8 1
+
+# seven constraints
+constraint, t2 starts-at t1
+constraint, t3 starts-at t2
+constraint, t4 starts-at t3
+constraint, t5 starts-at t4
+constraint, t6 starts-at t5
+constraint, t7 starts-at t6
+constraint, t8 starts-at t7
+
+# one soft domain constraint
+domain t1 endy-by mon 10am 10

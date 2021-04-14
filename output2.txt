@@ -1,0 +1,9 @@
+t1:mon 9am
+t2:mon 10am
+t3:mon 11am
+t4:mon 12pm
+t5:mon 1pm
+t6:mon 2pm
+t7:mon 3pm
+t8:mon 4pm
+cost:0

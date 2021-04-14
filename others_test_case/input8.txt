@@ -1,0 +1,17 @@
+# four tasks with two binary constraints and soft deadlines
+task, t1 2
+task, t2 2
+task, t3 2
+task, t4 2
+
+
+# two binary constraints
+constraint, t2 starts-at t1
+constraint, t3 starts-at t2
+constraint, t4 after t3
+
+# domain constraint
+domain, t3 starts-after tue 11am
+
+# soft deadlines
+domain, t4 ends-by mon 3pm 20

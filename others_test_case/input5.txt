@@ -1,0 +1,18 @@
+# three binary constraints
+constraint, taskkk101 before taskkk102
+constraint, taskkk102 before taskkk103
+constraint, taskkk102 starts-at taskkk101
+# six hard domain constraint
+domain, taskkk101 starts-after mon 3pm
+domain, taskkk103 ends-before fri 12pm
+domain, taskkk102 ends-before fri 12pm
+domain, taskkk101 ends-in mon 4pm-tue 5pm
+domain, taskkk102 ends-after 10am
+domain, taskkk103 starts-after tue 3pm
+# soft deadlines for taskkk102 and taskkk103
+domain, taskkk103 ends-by tue 3pm 5
+domain, taskkk102 ends-by tue 12pm 12
+# three tasks with durations
+task, taskkk101 4
+task, taskkk102 4
+task, taskkk103 7

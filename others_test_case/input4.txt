@@ -1,0 +1,59 @@
+# tasks with binary constraints and soft deadlines
+task, t1 2
+task, t2 5
+task, t3 3
+task, t4 2
+task, t5 2
+task, t6 4
+task, t7 2
+task, t8 1
+task, t9 3
+task, t10 2
+task, t11 4
+task, t12 3
+task, t13 3
+task, t14 6
+task, t15 2
+task, t16 2
+task, t17 3
+ 
+# binary constraints
+constraint, t2 before t1
+constraint, t3 after t5
+constraint, t4 same-day t3
+constraint, t8 starts-at t7
+
+# domain constraint
+domain, t1 tue
+domain, t5 wed
+domain, t6 10am
+domain, t7 starts-after tue 11am
+domain, t7 ends-after 1pm
+domain, t9 starts-before tue 12pm
+domain, t11 ends-before wed 4pm
+domain, t12 ends-after thu 3pm
+domain, t13 starts-in wed 3pm-fri 10am
+domain, t14 ends-in mon 12pm-tue 5pm
+domain, t15 starts-before 12pm
+domain, t16 ends-before 4pm
+domain, t17 starts-after 11am
+domain, t17 fri
+
+
+# soft deadlines
+domain, t1 ends-by mon 3pm 20
+domain, t2 ends-by tue 1pm 10
+domain, t3 ends-by mon 11am 30
+domain, t4 ends-by mon 3pm 20
+domain, t6 ends-by tue 12pm 50
+domain, t7 ends-by tue 12pm 10
+domain, t8 ends-by thu 3pm 10
+domain, t9 ends-by tue 1pm 10
+domain, t10 ends-by mon 3pm 10
+domain, t11 ends-by mon 2pm 15
+domain, t12 ends-by wed 12pm 10
+domain, t13 ends-by fri 3pm 10
+domain, t14 ends-by mon 3pm 20
+domain, t15 ends-by thu 1pm 10
+domain, t16 ends-by wed 12pm 10
+domain, t17 ends-by fri 1pm 10

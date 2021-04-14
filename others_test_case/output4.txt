@@ -1,0 +1,18 @@
+t1:tue 9am
+t2:mon 9am
+t3:wed 11am
+t4:wed 9am
+t5:wed 9am
+t6:mon 10am
+t7:tue 11am
+t8:tue 1pm
+t9:mon 9am
+t10:mon 9am
+t11:mon 9am
+t12:thu 12pm
+t13:thu 9am
+t14:mon 9am
+t15:mon 9am
+t16:mon 9am
+t17:fri 11am
+cost:3100
